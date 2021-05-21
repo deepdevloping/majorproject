@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#bg{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+   background-color: #fff;
+}
+#left #one h1{
+    margin-top: 40px;
+    font-weight: 800;
+}
+#left #one a{
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    color: #bdbcbc;
+    margin-top: 30px;
+}
+#left #one a:hover{
+    font-weight: 800;
+    color: rgb(15, 15, 15);
+    transform: scale(1.2);
+    transition-duration: .3s;
+}
+#left #two{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #bdbcbc;
+    margin-bottom: 20px;
+    
+}
+#left #two:hover{
+    font-weight: 800;
+    color: rgb(15, 15, 15);
+    transform: scale(1.1);
+    transition-duration: .3s;
+}
+#left #two i{
+    margin-right: 5px;
+}
+
+#center{
+    width: 35%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1551298698-66b830a4f11c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80);
+    background-size: cover;
+}
+#right{
+    position: relative;
+    width: 55%;
+    height: 100%;
+    background-color: #fff;
+}
+#right #centerright{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 65%;
+}
+
+#centerright #linetext{
+    display: flex;
+    align-items: center;
+}
+#linetext h1{
+    margin: 0 30px;
+    font-weight: 900;
+}
+#centerright .line{
+    width: 30%;
+    height: 2px;
+    background-color: black;
+}
+#centerright>h1{
+    font-size: 115px;
+    font-weight: 700;
+}
+#centerright>p{
+     font-size: 13px;
+     font-weight: 200;
+     color: rgba(82, 80, 80, 0.774);
+     margin-top: 5px;
+}
+#inputdiv{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    margin-top: 40px;
+    
+}
+#inputdiv input{
+    width: 80%;
+    height: 20px;
+    border:  2px solid #f3f3f3;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 12px 30px;
+    padding-left: 50px;
+    outline: none;
+    box-shadow: 0 15px 35px rgba(192, 113, 113, 0.2);
+}
+#inputdiv input::placeholder{
+    font-size: 12px;
+    color: #dadada;
+}
+
+#inputdiv button{
+    width: 20%;
+    height: 47px;
+    background-color: rgb(241, 150, 158);
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+   color: #f3f3f3;
+   box-shadow: 0 15px 35px rgba(192, 113, 113, 0.2);
+}
+#inputdiv i{
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translate(0, -50%);
+    color: #dadada;
+}
+
+#fdiv{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+   margin-top: 50px;
+}
+#imgdiv{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1519642918688-7e43b19245d8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80);
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 8px;
+}
+#fdiv p{
+    width: 40%;
+    font-size: 10px;
+    line-height: 17px;
+    font-weight: 500;
+    color: #b9a8a8;
+}
+#fdiv #imgdiv #cercel{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    opacity: .7;
+}
+
+#fdiv #imgdiv #cercel i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+#sidepart{
+    position: absolute;
+    right: 50px;
+    top: 45%;
+    transform-origin: 100% 0;
+    transform: rotate(-90deg);
+}
+#sidepart a{
+    margin-left: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #cab3b3;
+    font-weight: 500;
+    font-size: 12px;
+}
+ #sidepart a:hover{
+     color: rgb(15, 15, 15);
+     transition-duration: .2s;
+ }
+#down{
+    position: absolute;
+    right: 30px;
+    bottom: 3%;
+    font-size: 25px;
+    opacity: .4;
+}
+#topicon{
+    position: absolute;
+    top: 5%;
+    right: 30px;
+}
+#topicon i{
+    margin-left: 10px;
+    font-weight: 500;
+    color: #b49c9c;
+}
+#topicon i:hover{
+    color: rgb(15, 15, 15);
+    transform: scale(1.1);
+    transition-duration: .2s;
+}
